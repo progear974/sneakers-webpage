@@ -1,0 +1,23 @@
+{
+  "name": "sneakers-webpage",
+  "version": "1.0.0",
+  "description": "![Design preview for the E-commerce product page coding challenge](./design/desktop-preview.jpg)",
+  "main": "script.js",
+  "scripts": {
+    "start": "npx serve -S .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/progear974/sneakers-webpage.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/progear974/sneakers-webpage/issues"
+  },
+  "homepage": "https://github.com/progear974/sneakers-webpage#readme",
+  "dependencies": {
+    "serve": "^13.0.2"
+  }
+}

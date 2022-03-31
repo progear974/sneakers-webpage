@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
+  <title>Frontend Mentor | E-commerce product page</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+</head>
+
+<header>
+  <!-- navbar_container -->
+  <div class="flex__row" id="navbar__container">
+    <!-- left part nav bar -->
+    <div class="flex__row" id="navbar__left">
+      <div class="flex__row" id="menu">
+        <img src="./images/icon-menu.svg" alt="menu" class="menu" />
+      </div>
+      <!-- logo container -->
+      <img src="./images/logo.svg" alt="" id="logo">
+      <!-- end logo container -->
+      <!-- nav bar -->
+      <nav class="" id="navbar__nav">
+        <div id="close">
+          <img src="./images/icon-close.svg" alt="">
+        </div>
+        <ul class="" id="navbar">
+          <li>Collections</li>
+          <li>Men</li>
+          <li>Women</li>
+          <li>About</li>
+          <li>Contact</li>
+        </ul>
+      </nav>
+      <!-- end nav bar -->
+    </div>
+    <!-- end left part nav bar -->
+    <!-- right part nav bar -->
+    <div class="flex__row" id="navbar__right">
+      <!-- cart container -->
+      <div class="flex__row" id="cart-container">
+        <img src="./images/icon-cart.svg" alt="cart" class="cart">
+        <div class="count">0</div>
+        <!-- end cart container -->
+        <!-- cart section -->
+        <div id="cart_section">
+          <div id="cart_title">
+            <p><span class="bold">My Bag,</span> <span>1</span> item</p>
+            <img src="./images/icon-close.svg" alt="">
+          </div>
+          <div id="article_list">
+            <div class="article">
+              <div class="picture_article_cart">
+                <img src="./images/image-product-1.jpg" alt="">
+              </div>
+              <div class="description_article_cart">
+                <p class="bold price_article">$125.00</p>
+                <p class="old_price" style="font-size: 0.8rem">$250.00</p>
+                <p id="description_article" class="font_size_article">Fall limited Edition Sneakers</p>
+                <div class="flex__row font_size_article">
+                  <p>White</p>
+                  <p style="margin-left: 1rem;">UK 7.5</p>
+                </div>
+                <div id="trash">
+                  <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="1.2rem" height="1.2rem"
+                    viewBox="0 0 50 50" style=" fill:hsl(219, 9%, 45%);">
+                    <path
+                      d="M 21 0 C 19.355469 0 18 1.355469 18 3 L 18 5 L 10.1875 5 C 10.0625 4.976563 9.9375 4.976563 9.8125 5 L 8 5 C 7.96875 5 7.9375 5 7.90625 5 C 7.355469 5.027344 6.925781 5.496094 6.953125 6.046875 C 6.980469 6.597656 7.449219 7.027344 8 7 L 9.09375 7 L 12.6875 47.5 C 12.8125 48.898438 14.003906 50 15.40625 50 L 34.59375 50 C 35.996094 50 37.1875 48.898438 37.3125 47.5 L 40.90625 7 L 42 7 C 42.359375 7.003906 42.695313 6.816406 42.878906 6.503906 C 43.058594 6.191406 43.058594 5.808594 42.878906 5.496094 C 42.695313 5.183594 42.359375 4.996094 42 5 L 32 5 L 32 3 C 32 1.355469 30.644531 0 29 0 Z M 21 2 L 29 2 C 29.5625 2 30 2.4375 30 3 L 30 5 L 20 5 L 20 3 C 20 2.4375 20.4375 2 21 2 Z M 11.09375 7 L 38.90625 7 L 35.3125 47.34375 C 35.28125 47.691406 34.910156 48 34.59375 48 L 15.40625 48 C 15.089844 48 14.71875 47.691406 14.6875 47.34375 Z M 18.90625 9.96875 C 18.863281 9.976563 18.820313 9.988281 18.78125 10 C 18.316406 10.105469 17.988281 10.523438 18 11 L 18 44 C 17.996094 44.359375 18.183594 44.695313 18.496094 44.878906 C 18.808594 45.058594 19.191406 45.058594 19.503906 44.878906 C 19.816406 44.695313 20.003906 44.359375 20 44 L 20 11 C 20.011719 10.710938 19.894531 10.433594 19.6875 10.238281 C 19.476563 10.039063 19.191406 9.941406 18.90625 9.96875 Z M 24.90625 9.96875 C 24.863281 9.976563 24.820313 9.988281 24.78125 10 C 24.316406 10.105469 23.988281 10.523438 24 11 L 24 44 C 23.996094 44.359375 24.183594 44.695313 24.496094 44.878906 C 24.808594 45.058594 25.191406 45.058594 25.503906 44.878906 C 25.816406 44.695313 26.003906 44.359375 26 44 L 26 11 C 26.011719 10.710938 25.894531 10.433594 25.6875 10.238281 C 25.476563 10.039063 25.191406 9.941406 24.90625 9.96875 Z M 30.90625 9.96875 C 30.863281 9.976563 30.820313 9.988281 30.78125 10 C 30.316406 10.105469 29.988281 10.523438 30 11 L 30 44 C 29.996094 44.359375 30.183594 44.695313 30.496094 44.878906 C 30.808594 45.058594 31.191406 45.058594 31.503906 44.878906 C 31.816406 44.695313 32.003906 44.359375 32 44 L 32 11 C 32.011719 10.710938 31.894531 10.433594 31.6875 10.238281 C 31.476563 10.039063 31.191406 9.941406 30.90625 9.96875 Z">
+                    </path>
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="subtotal" class="flex__row space_between font_size_article">
+            <p>Subtotal</p>
+            <p>$125.00</p>
+          </div>
+          <div id="btn_cart_section" class="flex__row">
+            <button class="btn_article">View bag</button>
+            <button class="btn_article green">Checkout</button>
+          </div>
+          <div class="flex__row" id="free-worldwide">
+            <p>Free Delivery Worldwide*</p>
+            <p style="font-size: 0.8rem;">More info here</p>
+          </div>
+        </div>
+      </div>
+      <img src="./images/image-avatar.png" id="avatar">
+      <!-- end cart section -->
+    </div>
+    <!-- end right part nav bar -->
+  </div>
+  <!-- end navbar container -->
+</header>
+
+<main>
+  <!-- left main -->
+  <div id="left__main">
+    <!-- carousel -->
+    <div id="carousel">
+      <!-- big picture container -->
+      <div id="big_picture_container">
+        <img src="./images/image-product-1.jpg" alt="" id="big_picture">
+        <div id="previous-next">
+          <img src="./images/icon-previous.svg" alt="previous" class="previous" />
+          <img src="./images/icon-next.svg" alt="next" class="next" />
+        </div>
+      </div>
+      <!-- end big picture -->
+      <!-- little pictures container -->
+      <div id="little_pictures">
+        <ul class="flex__row" id="list_little_pictures">
+          <li class="little_picture"><img src="./images/image-product-1.jpg" alt=""></li>
+          <li class="little_picture"><img src="./images/image-product-2.jpg" alt=""></li>
+          <li class="little_picture"><img src="./images/image-product-3.jpg" alt=""></li>
+          <li class="little_picture"><img src="./images/image-product-4.jpg" alt=""></li>
+        </ul>
+      </div>
+      <!-- end little pictures container -->
+    </div>
+    <!-- end carousel -->
+  </div>
+  <!-- end left main -->
+  <!-- description section -->
+  <div id="right__main">
+    <!-- company container -->
+    <p id="company">Sneaker Company</p>
+    <!-- end company container -->
+    <!-- title -->
+    <p id="title">Fall Limited Edition Sneakers</p>
+    <!-- end title -->
+    <!-- description -->
+    <p id="description">These low-profile sneakers are your perfect casual wear companion. Featuring a durable rubber
+      outer sole, they’ll
+      withstand everything the weather can offer.
+    </p>
+    <!-- end description -->
+    <!-- price container -->
+    <div id="price__container">
+      <!-- actual price container -->
+      <div class="flex__row">
+        <p id="price">$125.00</p>
+        <p id="discount">50%</p>
+      </div>
+      <!-- end actual price container -->
+      <!-- old price container -->
+      <p class="old_price old_margin">$250.00</p>
+      <!-- end old price container -->
+    </div>
+    <!-- end price -->
+    <!-- btns_container -->
+    <div class="flex__row btns__container">
+      <!-- nb container -->
+      <div class="flex__row" id="plus_minus">
+        <img src="./images/icon-minus.svg" alt="" class="btn_plus_minus" id="minus">
+        <div id="quantity">0</div>
+        <img src="./images/icon-plus.svg" alt="" class="btn_plus_minus" id="plus">
+      </div>
+      <!-- end nb container -->
+      <!-- add to cart container -->
+      <button class="flex__row" id="add_to_cart">
+        <img src="./images/icon-cart-white.svg" alt="" srcset="">
+        <span id="text_add_to_cart">Add To Cart</span>
+      </button>
+      <!-- end add to cart container -->
+    </div>
+    <!-- end btns_container -->
+  </div>
+  <!-- end description section -->
+  <div class="modal">
+    <div class="img_display">
+      <img src="./images/image-product-1.jpg" alt="" id="big_picture_modal">
+    </div>
+  </div>
+</main>
+
+</html>
